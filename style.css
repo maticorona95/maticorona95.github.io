@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background-color: rgb(19, 19, 19);
+    color: #EFEFEF;
+    font-family: 'Kablammo', cursive;
+   
+}
+
+/* header>img{
+    float: left;
+} */
+
+body>header>div{
+    display: inline-block;
+}
