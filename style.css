@@ -33,18 +33,24 @@ nav>ul>li{
 }
 
 p {
-    width: 550px;
+    width: 400px;
     border: 2px solid;
     border-radius: 20px;
     padding: 5px;
+   
     
 }
 
 
 h2,
-h3 {
+h3 ,
+h4{
    border-radius: 5px;
    color: blue;
+   display:flex;
+   justify-content:flex-start;
+   text-align:  center;
+   
    
 }
 
@@ -112,6 +118,21 @@ form{
     border: 2px solid black;
     width: 300px;
     height: 300px;
+}
+
+.ult{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 15%;
+    margin: 0 auto;
+   
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    
 }
 
 /* body>header>div{
