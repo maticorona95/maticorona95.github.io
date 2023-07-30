@@ -7,10 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <a href="https://www.flaticon.es/iconos-gratis/avatar" title="avatar iconos"></a>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Kablammo&family=Varela+Round&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Kablammo&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Noticias </title>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -20,102 +23,108 @@
 
     <header>
 
-        
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Nosotros</a></li>
-            <li><a href="index.html">Comentarios</a></li>
-            <li><a href="index.html">Contacto</a></li>
-            
-        </ul>
-    </nav>
 
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#comentario">Comentarios</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+
+            </ul>
+        </nav>
+
+          <div class="contenedor-principal">
         <div class="imagen1">
-            <h1>Digitallers Portal : </h1>
+            <h1>Digitallers Portal :</h1>
             <h2>Las Ultimas noticias del curso de Digitallers</h2>
         </div>
-        <div class="imagen2" >
-        <img src="./img/maxresdefault.jpg" alt="" width="90%" height="500px" >
+        <div class="imagen2">
+            <img src="./img/earth-g230eeec1a_1280.jpg" >
+        </div>
     </div>
     </header>
-   
 
 
 
-    <main>
-        <div  class="not2">
-       <div><h1>Ultimas Novedades De Los Digitallers</h1></div>
-        <section id="noticia ">
-            <article id="noticia_1">
-                <header>
-                    <h3>Un juegaso Aara Aprender css</h3></header>
+
+    <main id="Nosotros">
+        <div class="not2">
+            <div>
+                <h1>Ultimas Novedades De Los Digitallers</h1>
+            </div>
+            <section id="noticia ">
+                <article id="noticia_1">
+                    <header>
+                        <h3>Un juegaso Aara Aprender css</h3>
+                    </header>
                     <p>
-                        Css Sushi Es un Juegaso Para Aprender css. Pueden Acceder Al Aismo <a href="https://flukeout.github.io/">aqui</a>
+                        Css Sushi Es un Juegaso Para Aprender css. Pueden Acceder Al Aismo <a
+                            href="https://flukeout.github.io/">aqui</a>
                     </p>
-                
-            </article>
-            <article class="noticia" id="noticia_2">
-                <header>
-                    <h3>Digitallers es la mejor propuesta de capacitacion</h3></header>
+
+                </article>
+                <article class="noticia" id="noticia_2">
+                    <header>
+                        <h3>Digitallers es la mejor propuesta de capacitacion</h3>
+                    </header>
                     <p> Queres ser un jedi en frontend? que estas esperando . el programa digitalers es tu oportunidad.
                     </p>
-                
-            </article>
-            <article class="noticia" id="noticia_3">
-                <header><h3>Una IA crea los simpsons en la vida real</h3></header>
-                <p>
-                   Se le pidio a una IA que retrate a los simpson en la vida real y esto es lo que salio.
-                   queres verlos en el siguiente link: <a href="#"></a>
-                </p> 
-             </article>
+
+                </article>
+                <article class="noticia" id="noticia_3">
+                    <header>
+                        <h3>Una IA crea los simpsons en la vida real</h3>
+                    </header>
+                    <p>
+                        Se le pidio a una IA que retrate a los simpson en la vida real y esto es lo que salio.
+                        queres verlos en el siguiente link: <a href="#"></a>
+                    </p>
+                </article>
+        </div>
+        </section>
+
+
+        <section id="comentario">
+            <div class="nto1">
+                <div>
+                    <h1>Comentarios:(Registrados)</h1>
+
+                </div>
+                <article class="noticia" id="comentario 1 ">
+                    <img src="./img/hombre.png" width="100px"> User: Favicon98
+                    <p>Muy bueno el curso el profe es Crack</p>
+                </article>
+                <article id="comentario 2 ">
+                    <img src="./img/mujer-de-negocios.png" width="100px"> User: Melinaaa
+                    <p>Aprendi tanto que me llamaron de Google</p>
+
+                </article>
+                <article id="comentario 3 ">
+                    <img src="./img/avatar-de-hombre.png" width="100px"> User: Mati95
+                    <p>Aguante html y Css pero mejor es js xD</p>
+
+                </article>
+            </div>
+
+
+
+            <div id="deja_comentario">
+                <article class="noticia" id="comentario 1 ">
+                    <h1>No Registrados</h1>
+                    <img src="./img/no-registrado.png" width="100px">
+                    <input type="text" id="texto" placeholder="Ingrese su comentario">
+                    <button onclick="agregarElemento()">Agregar</button>
+                    <div id="resultado"></div>
+                </article>
             </div>
         </section>
-        
-        
-        <section id="comentario">
-                <div class="nto1">
-                    <div>
-                        <h1>Comentarios:</h1>
-                        
-                    </div>
-                    <article class="noticia" id="comentario 1 ">
-                        <img src="./img/hombre.png" width="100px">
-                        <p>Muy bueno el curso el profe es Crack</p>
-                    </article>
-                    <article id="comentario 2 ">
-                        <img src="./img/mujer-de-negocios.png"width="100px">
-                        <p>Aprendi tanto que me llamaron de Google</p>
-                        
-                    </article>
-                    <article id="comentario 3 ">
-                        <img src="./img/avatar-de-hombre.png" width="100px">
-                        <p>Aguante html y Css pero mejor es js xD</p>
-                        
-                    </article>
-                </div>
-            
 
-        
-            <div id="deja_comentario">
-                    <form>
-                    <label> Nombre:</label>
-                    <input type="text" required>
-                    <label >Correo : (opcional)</label>
-                    <input type="email">
-                    <label>comentarios</label>
-                    <textarea name="" id="" cols="10" rows="1"></textarea>
-                    <button>dejar comentario</button>
 
-                    </form>
-             </div>
-        </section>
-    
-    
-    
+
     </main>
-   
-    <footer>
+
+    <footer id="Contacto">
 
         <!-- <div class="form2">  
             <form>
@@ -131,12 +140,13 @@
      </div> -->
         <h2>Contrata Fibercorp El Mejor Servicio <br> Estamos Ubicados En Buenos Aires . </h2>
         <a href="./img/whatsapp-logo_icon-icons.com_57054.png">+54 999 999 999</a>
-        
+
         <iframe
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47496843827!2d-58.598111452068146!3d-34.61543034902734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1688405777737!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        copyrigth 2023  &copy; Digitallers
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47496843827!2d-58.598111452068146!3d-34.61543034902734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1688405777737!5m2!1ses-419!2sar"
+            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        copyrigth 2023 &copy; Digitallers
     </footer>
 </body>
 
 </html>
-
