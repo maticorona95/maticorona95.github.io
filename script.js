@@ -55,3 +55,27 @@ function confirmarEliminarElemento() {
         mostrarArreglo();
     }
 }
+
+
+
+
+// Función para mostrar u ocultar el botón de volver al principio
+function mostrarVolverArriba() {
+    const botonVolverArriba = document.getElementById("volver-arriba");
+    if (window.scrollY > 300) {
+        botonVolverArriba.style.display = "block";
+    } else {
+        botonVolverArriba.style.display = "none";
+    }
+}
+
+// Event listener para detectar el desplazamiento del usuario
+window.addEventListener("scroll", mostrarVolverArriba);
+
+// Función para volver al principio de la página
+function volverArriba() {
+    window.scrollTo(0, 0);
+}
+
+// Event listener para el clic en el botón de volver al principio
+document.getElementById("volver-arriba").addEventListener("click", volverArriba);
