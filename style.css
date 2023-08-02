@@ -10,8 +10,8 @@ body {
 
     margin: 0;
     padding: 0;
-    background: rgb(18,18,32);
-background: linear-gradient(347deg, rgba(18,18,32,1) 42%, rgba(0,212,255,1) 50%, rgba(33,9,121,1) 100%);
+    background: rgb(67,69,103);
+    background: linear-gradient(335deg, rgba(67,69,103,1) 0%, rgba(0,74,255,1) 0%, rgba(0,0,0,1) 23%, rgba(0,74,255,1) 69%, rgba(0,60,208,1) 95%);
 
 
 
@@ -84,9 +84,9 @@ nav ul li a {
 
 p {
     width: 400px;
-    box-shadow: 7px -2px 0px 0px rgba(153, 0, 255, 0.37);
-    -webkit-box-shadow: 7px -2px 0px 0px rgba(153, 0, 255, 0.37);
-    -moz-box-shadow: 7px -2px 0px 0px rgba(153, 0, 255, 0.37);
+    box-shadow: 7px -2px 0px 0px rgba(77, 55, 99, 0.37);
+    -webkit-box-shadow: 7px -2px 0px 0px rgba(88, 63, 97, 0.37);
+    -moz-box-shadow: 7px -2px 0px 0px rgba(77, 54, 100, 0.37);
     border-radius: 20px;
     padding: 5px;
 
