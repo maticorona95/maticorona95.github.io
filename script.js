@@ -29,8 +29,15 @@ function mostrarArreglo() {
         let elementoDiv = document.createElement('div');
         elementoDiv.className = 'elemento';
 
+        // Agregar la imagen
+        let imagen = document.createElement('img');
+        imagen.src = "./img/no-registrado.png"; // Reemplaza "ruta" con la ubicación de las imágenes
+        imagen.className = 'imagen-comentario';
+        elementoDiv.appendChild(imagen);
+
         let nombreParrafo = document.createElement('p');
         nombreParrafo.innerText = dato.nombre;
+        elementoDiv.appendChild(nombreParrafo);
 
         if (dato.id > 4) {
             let botonEliminar = document.createElement('button');
@@ -41,10 +48,33 @@ function mostrarArreglo() {
             elementoDiv.appendChild(botonEliminar);
         }
 
-        elementoDiv.appendChild(nombreParrafo);
         resultado.appendChild(elementoDiv);
     }
 }
+
+
+let comentarioAgregado = false; // Variable para controlar si ya se agregó un comentario
+
+function agregarElemento() {
+    if (comentarioAgregado) {
+        alert('Solo se permite ingresar un comentario si no esta registrado.');
+    } else {
+        let dato = document.getElementById('texto').value.trim();
+        if (dato !== '') {
+            datos.push({ id: datos.length + 1, nombre: dato, autor: "Usuario", done: false });
+            document.getElementById('texto').value = '';
+            mostrarArreglo();
+            comentarioAgregado = true; // Actualizar el estado de la variable
+        } else {
+            alert('Ingresa Un Comentario Primero.');
+        }
+    }
+}
+
+
+
+
+
 
 function confirmarEliminarElemento() {
     let index = this.getAttribute('data-index');
@@ -55,6 +85,7 @@ function confirmarEliminarElemento() {
         mostrarArreglo();
     }
 }
+
 
 
 
