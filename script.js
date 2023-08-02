@@ -15,7 +15,7 @@ function agregarElemento() {
         document.getElementById('texto').value = '';
         mostrarArreglo();
     } else {
-        alert('Ingresa Un Comentario Primero.');
+        Swal.fire('Ingrese un Comentario Primero')
     }
 }
 
