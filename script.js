@@ -53,29 +53,6 @@ function mostrarArreglo() {
 }
 
 
-let comentarioAgregado = false; // Variable para controlar si ya se agregó un comentario
-
-function agregarElemento() {
-    if (comentarioAgregado) {
-        alert('Solo se permite ingresar un comentario si no esta registrado.');
-    } else {
-        let dato = document.getElementById('texto').value.trim();
-        if (dato !== '') {
-            datos.push({ id: datos.length + 1, nombre: dato, autor: "Usuario", done: false });
-            document.getElementById('texto').value = '';
-            mostrarArreglo();
-            comentarioAgregado = true; // Actualizar el estado de la variable
-        } else {
-            alert('Ingresa Un Comentario Primero.');
-        }
-    }
-}
-
-
-
-
-
-
 function confirmarEliminarElemento() {
     let index = this.getAttribute('data-index');
     let confirmar = confirm('¿Estás seguro de eliminar este comentario?');
