@@ -4,6 +4,8 @@
     font-family: 'Kablammo', cursive;
     font-family: 'Varela Round', sans-serif;
     color: aliceblue;
+
+  
 }
 
 body {
@@ -13,7 +15,9 @@ body {
     background: rgb(67,69,103);
     background: linear-gradient(335deg, rgba(67,69,103,1) 0%, rgba(0,74,255,1) 0%, rgba(0,0,0,1) 23%, rgba(0,74,255,1) 69%, rgba(0,60,208,1) 95%);
 
-
+    @media (min-width:300px) { }
+    @media (max-width: 1000px) { }
+    @media (min-width:640px) and (max-width: 768px) { }
 
 }
 
@@ -21,10 +25,14 @@ body {
 .header-imagen{
     background: url('./img/earth-g230eeec1a_1280.jpg');
     height: 450px;
-    width: 76em;
+    width: 200vh;
     background-size: cover;
     margin: 1em;
     margin-left: 80px;
+
+    @media (min-width:300px) { }
+    @media (max-width: 1000px) { }
+    @media (min-width:640px) and (max-width: 768px) { }
    
 }
 
@@ -64,8 +72,13 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: rgba(153, 0, 255, 0.37);
-    width: 76em;
+    width: 200vh;
     margin-left: 80px;
+
+    @media (min-width:300px) { }
+    @media (max-width: 1000px) { }
+    @media (min-width:640px) and (max-width: 768px) { }
+
 
 }
 
@@ -154,6 +167,10 @@ aside>p {
     width: 100%;
     padding: 10px;
     height: 600px;
+    @media (min-width:300px) { }
+    @media (max-width: 1000px) { }
+    @media (min-width:640px) and (max-width: 768px) { }
+
 
 
 
