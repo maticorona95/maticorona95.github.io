@@ -137,7 +137,8 @@
 @media screen and (max-width:900px){
     #ftcon{
         min-width: auto;
-        width: 140%;
+        width: 100%;
+        margin-top: 250px;
    
         
     }
@@ -145,13 +146,52 @@
 
 
 @media screen and (max-width:700px){
-    #ftcon{
+    #ftcon  {
         
         min-width: auto;
-        width: 140%;
+        width: 100%;
         margin-top: 250px;
+        padding-bottom: 300px;
         display: block;
-        justify-content: left;
+        
+        
+   
+        
+    }
+}
+
+
+@media screen and (max-width:700px){
+    #ftcon figure  {
+        
+       
+        display: none;
+        
+        
+   
+        
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+    #ftcon p .box  {
+        
+       
+       font-size: 10px;
+        
+        
+   
+        
+    }
+}
+
+
+@media screen and (max-width:633px){
+    .box {
+       display: none;
+        
         
    
         
