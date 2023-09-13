@@ -11,12 +11,15 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Noticias </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+    <title>Ultimas Noticias Digitallers </title>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -28,7 +31,7 @@
     </a>
 
 
-    <nav>
+    <nav class="navbar navbar-expand">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#Nosotros">Nosotros</a></li>
@@ -40,10 +43,12 @@
 
 
     <header class="header-imagen">
+
+        <img src="img/landscape-g0243ad90b_1280.jpg" alt="" class="img-fluid  ">
            <section class="section-header">
         <div class="contenedor-principal">
           
-                <h1>Digitallers Portal :</h1>
+              
                 
            
             </section>
@@ -119,7 +124,7 @@
                     <h1>No Registrados</h1>
                     <img src="./img/no-registrado.png" width="100px">
                     <input type="text" id="texto" placeholder="Ingrese su comentario">
-                    <button class="btn-agre" onclick="agregarElemento()">Agregar</button>
+                    <button  class="btn-agre" onclick="agregarElemento()">Agregar</button>
                     <div id="resultado"></div>
                 </article>
             </div>
@@ -157,6 +162,8 @@
             <small>&copy; 2023 <b>DG</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

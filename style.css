@@ -1,45 +1,36 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Caprasimo', cursive;
     font-family: 'Kablammo', cursive;
     font-family: 'Varela Round', sans-serif;
-    color: aliceblue;
+    color: black;
 
   
 }
 
 body {
 
-    margin: 0;
-    padding: 0;
-    background: rgb(67,69,103);
-    background: linear-gradient(335deg, rgba(67,69,103,1) 0%, rgba(0,74,255,1) 0%, rgba(0,0,0,1) 23%, rgba(0,74,255,1) 69%, rgba(0,60,208,1) 95%);
-
-    @media (min-width:300px) { }
-    @media (max-width: 1000px) { }
-    @media (min-width:640px) and (max-width: 768px) { }
-
-}
-
-
-.header-imagen{
-    background: url('./img/earth-g230eeec1a_1280.jpg');
-    height: 450px;
-    width: 200vh;
-    background-size: cover;
-    margin: 1em;
-    margin-left: 80px;
-
-    @media (min-width:300px) { }
-    @media (max-width: 1000px) { }
-    @media (min-width:640px) and (max-width: 768px) { }
    
+    background: lightgray;
 }
+
+
+
 
 .section-header{
    min-width: 1000px;
    margin: auto;
    padding: 30px 0;
+}
+
+
+header img {
+    width: 100%;
+   
+    
+    
 }
 
 .contenedor-principal h1  {
@@ -64,6 +55,7 @@ nav ul {
     box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.37);
     -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,13 +63,9 @@ nav ul {
     margin: 18px;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(153, 0, 255, 0.37);
+    background-color: rgba(41, 8, 160, 0.37);
     width: 200vh;
     margin-left: 80px;
-
-    @media (min-width:300px) { }
-    @media (max-width: 1000px) { }
-    @media (min-width:640px) and (max-width: 768px) { }
 
 
 }
@@ -90,7 +78,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color:aliceblue;
+    color:black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -100,9 +88,9 @@ nav ul li a {
 
 p {
     width: 400px;
-    box-shadow: 7px -2px 0px 0px rgba(77, 55, 99, 0.37);
-    -webkit-box-shadow: 7px -2px 0px 0px rgba(88, 63, 97, 0.37);
-    -moz-box-shadow: 7px -2px 0px 0px rgba(77, 54, 100, 0.37);
+    box-shadow: 7px -2px 0px 0px rgba(41, 8, 160, 0.37);
+    -webkit-box-shadow: 7px -2px 0px 0px rgba(16, 18, 134, 0.37);
+    -moz-box-shadow: 7px -2px 0px 0px rgba(39, 16, 141, 0.37);
     border-radius: 20px;
     padding: 5px;
 
@@ -160,21 +148,19 @@ aside>p {
 
 #comentario {
     display: flex;
-    box-shadow: 13px -19px 0px 0px rgba(153, 0, 255, 0.37);
-    -webkit-box-shadow: 13px -19px 0px 0px rgba(153, 0, 255, 0.37);
-    -moz-box-shadow: 13px -19px 0px 0px rgba(153, 0, 255, 0.37);
+    box-shadow: 13px -19px 0px 0px rgba(29, 6, 160, 0.37);
+    -webkit-box-shadow: 13px -19px 0px 0px rgba(22, 45, 180, 0.37);
+    -moz-box-shadow: 13px -19px 0px 0px rgba(16, 39, 168, 0.37);
     border-radius: 25px;
     width: 100%;
     padding: 10px;
     height: 600px;
-    @media (min-width:300px) { }
-    @media (max-width: 1000px) { }
-    @media (min-width:640px) and (max-width: 768px) { }
-
-
-
 
 }
+
+
+
+
 
 
 #deja_comentario {
@@ -195,6 +181,9 @@ aside>p {
 }
 
 
+
+
+
 .ult {
     display: flex;
     flex-direction: column;
@@ -213,6 +202,11 @@ footer {
     height: 400px;
 
 
+}
+
+
+.grupo-2  small {
+    color: #efefef;
 }
 
 /* body>header>div{
@@ -344,14 +338,7 @@ input[type="text"] {
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}
+
 
 /* Estilos para el contenedor de cada comentario */
 .elemento {

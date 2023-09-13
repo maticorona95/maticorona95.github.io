@@ -1,0 +1,152 @@
+@media screen and (max-width:974px){
+    .navbar{
+        min-width: auto;
+        width: 85%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .navbar{
+        min-width: auto;
+        width: 140%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .navbar{
+        min-width: auto;
+        width: 180%;
+   
+        
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:974px){
+    .header-imagen{
+        min-width: auto;
+        width: 85%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .header-imagen{
+        min-width: auto;
+        width: 140%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .header-imagen{
+        min-width: auto;
+        width: 180%;
+   
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:974px){
+    .not2{
+        min-width: auto;
+        width: 85%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .not2{
+        min-width: auto;
+        width: 140%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .not2{
+        min-width: auto;
+        width: 80%;
+        margin-left: 200px;
+        
+   
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    #comentario{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:90px;
+        padding: 65px 0px;
+    }
+}
+
+
+
+
+@media screen and (max-width:974px){
+    #ftcon{
+        min-width: auto;
+        width: 85%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:900px){
+    #ftcon{
+        min-width: auto;
+        width: 140%;
+   
+        
+    }
+}
+
+
+@media screen and (max-width:700px){
+    #ftcon{
+        min-width: auto;
+        width: 180%;
+     
+        
+   
+        
+    }
+}
